@@ -79,6 +79,8 @@ video {
 body {
 	line-height: 1;
 	font-family: arial
+	background: #E5FDC3;
+	animation: mymove 5s infinite;
 }
 
 h1 {
@@ -112,12 +114,11 @@ header {
 	top: 0;
 	z-index: 999;
 	height: 40px;
-	animation: mymove 5s infinite;
 }
 
 @keyframes mymove {
-	from {background-color: green;}
-	to {background-color: red;}
+	from {background-color: #E5FDC3;}
+	to {background-color: #44ADA8;}
 	
 }
 
