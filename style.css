@@ -103,7 +103,7 @@ section {
 }
 
 header {
-	background: #6fb360;
+	background: green;
 	padding: 10px 30px;
 	margin: auto;
 	position: fixed;
@@ -112,6 +112,13 @@ header {
 	top: 0;
 	z-index: 999;
 	height: 40px
+	animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+	from {background-color: green;}
+	to {background-color: red;}
+	
 }
 
 nav ul li a {
