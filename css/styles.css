@@ -3004,7 +3004,7 @@ p {
 
 .slider {
   top: 10px;
-  left: 200px;
+  left: 170px;
   width: 80px;
   height: 26px;
   background: #000;
@@ -3055,7 +3055,7 @@ p {
   margin: 10px;
   position: absolute;
   top: -9px;
-  left: -170px;
+  left: -190px;
 }
 .slider input[type="checkbox"] {
   visibility: hidden;
