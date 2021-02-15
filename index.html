@@ -6,31 +6,33 @@
    </head>
    <body>
       
-      <!-- Navigation -->
-      <div data-collapse="medium" data-animation="default" data-duration="400" role="banner" class="nav w-nav">
-         <div class="nav-container w-container">
-              <nav role="navigation" class="nav-menu w-nav-menu">
-                       <a href="index.html" class="nav-link w-nav-link">Home</a>
-                       <a href="passwords.html" class="nav-link w-nav-link">Passwords</a>
-                       <a href="#" class="nav-link w-nav-link">Cyber Breaches</a>
-                       <a href="#" class="nav-link w-nav-link">Emails</a>
-                       <a href="#" class="nav-link w-nav-link">Phishing</a>
-                       <a href="#" class="nav-link w-nav-link">Sharing Information</a>
-                       <a href="#" class="nav-link w-nav-link">Public</a>
-                       <a href="#" class="nav-link w-nav-link">Social Media</a>
-                       <a href="#" class="nav-link w-nav-link">Contact</a>
-            </nav>
-            <div class="w-nav-button">
-               <div class="w-icon-nav-menu"></div>
-            </div>
-         </div>
-      </div>
+      	<!-- Navigation -->
+		<section class="navigation">
+		  <div class="nav-container">
+		    <nav>
+		      <ul>
+		        <li><a href="index.html">Home Page</a></li>
+		        <li><a href="passwords.html">Passwords</a></li>
+		        <li><a href="#">Cyber Breaches</a></li>
+		        <li><a href="#">Emails</a></li>
+		        <li><a href="#">Phishing</a></li>
+		        <li><a href="#">Sharing Information</a></li>
+		        <li><a href="#">Public</a></li>
+		        <li><a href="#">Social Media</a></li>
+		        <li><a href="#">Contact</a></li>
+		        <li class="menu">
+		          <span></span>
+		        </li>
+		      </ul>
+		    </nav>
+		  </div>
+		</section>
       
       <!-- First Section -->
       <div class="hero-section">
          <a href="#" class="logo w-nav-brand"></a>
          <div class="hero-right">
-            <img src="images/logo.png" loading="lazy" alt="Logo"/>
+            <img src="images/logo.png" alt="Logo"/>
             <p class="caption-1">Since the pandemic began, the FBI reported a 300% increase in reported cybercrimes. We are here to ensure you are never a victim of cyber crime.</p>
          </div>
          <div>
@@ -44,7 +46,7 @@
             <div class="left-1">
                <p class="paragraph-2"><strong>• Damage from cybercrime: $6 trillion USD a year<br/><br/>• Worldwide spending on cyber security is going to reach $170.4    billion USD in 2022<br/><br/>• Data breaches exposed 4.1 billion records in the first half of 2019<br/><br/>• 1 in 36 mobile devices have high-risk apps installed</strong></p>
             </div>
-            <div class="right-1"><img src="images/laptop2.jpeg" loading="lazy" width="400" sizes="(max-width: 767px) 72vw, 36vw" alt="Image of a hacker on a laptop"/></div>
+            <div class="right-1"><img src="images/laptop2.jpeg" width="400" sizes="(max-width: 767px) 72vw, 36vw" alt="Image of a hacker on a laptop"/></div>
          </div>
          <div class="wrap-2 b">
             <div class="left-2"><img src="images/laptop.jpeg" width="400" sizes="(max-width: 767px) 80vw, 40vw" alt="Image of a hacker on a laptop"/></div>
@@ -116,10 +118,23 @@
             </div>
          </div>
       </div>
-      <div class="w-embed">
-         <style>
-            .xxx { background: rgba(0,0,0,0.05); }
-         </style>
-      </div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script>
+			var $nav = $('nav > ul');
+			var $btnMenu = $('.menu');
+
+			$btnMenu.click(function() {
+				$nav.find('li:not(.menu)').toggleClass('animate');
+				$btnMenu.toggleClass('closed');
+			})
+
+			$(window).resize(function() {
+				if ($(document).width() > 1088) {
+					$btnMenu.removeClass('closed');
+					$nav.find('li').removeAttr('style')
+					$nav.find('li').removeClass('animate');
+				}
+			})
+		</script>
    </body>
 </html>
