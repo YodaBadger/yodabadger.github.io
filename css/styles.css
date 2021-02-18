@@ -1002,7 +1002,7 @@ li.menu.closed > span:after {
 li.menu.closed > span:after {
 	transform: rotate(-45deg);
 }
-@media (max-width: 1088px) {
+@media (max-width: 1179px) {
 	nav > ul {
 		flex-direction: column;
 	}
