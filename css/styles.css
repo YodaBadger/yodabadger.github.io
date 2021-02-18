@@ -1234,7 +1234,32 @@ label p {
   padding: 0 0.4rem;
   background: #f1f1f1;
 }
-
+@media screen and (max-width: 840px) {
+  label p {
+    color: #f1f1f1;
+    font-size: 1em;
+    user-select: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 0.8rem;
+    padding: 0 0.4rem;
+    background: #f1f1f1;
+  }
+}
+@media screen and (max-width: 580px) {
+  label p {
+    color: #f1f1f1;
+    font-size: 0.7em;
+    user-select: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 0.8rem;
+    padding: 0 0.4rem;
+    background: #f1f1f1;
+  }
+}
 label input:not(:placeholder-shown) {
   border-color: #ff4754;
 }
