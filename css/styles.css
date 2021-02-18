@@ -943,6 +943,10 @@ input[type="reset"] {
   width: 100%;
   margin: 0 auto;
 }
+.nav-container a.active{
+  background: #C8C8C8;
+  color: #000000;
+}
 nav {
   width: 1000px;
   margin: 0 auto;
