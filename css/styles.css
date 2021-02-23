@@ -1073,6 +1073,21 @@ nav ul li a:visited:hover {
   color: #000000;
 }
 
+.nav-container a.active{
+  background: #C8C8C8;
+  color: #000000;
+}
+
+
+/* Password Checker Section */
+.card1 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  float: left;
+  width: 80%;
+  height: 400px;
+  padding-left: 10%;
+  background-color: #f1f1f1;
+}
 
 /* Password Generator section*/
 * {
@@ -1085,9 +1100,9 @@ nav ul li a:visited:hover {
 }
 
 /* Float four columns side by side */
-.column {
+.column1 {
   float: left;
-  width: 30%;
+  width: 300px;
   padding: 10px;
   margin-left: 10px;
 }
@@ -1113,46 +1128,53 @@ nav ul li a:visited:hover {
 }
 
 @media screen and (max-width: 1278px) {
-  .column {
-    width: 30%;
+  .column1 {
+    width: 300px;
     display: block;
     margin-bottom: 20px;
   }
   .column2 {
-  float: left;
-  width: 100%;
-  padding: 0 10px;
-}
+    float: left;
+    width: 100%;
+    padding: 0 10px;
+  }
 }
 
 /* Responsive columns */
-@media screen and (max-width: 988px) {
-  .column {
-    width: 30%;
+@media screen and (max-width: 1137px) {
+  .column1 {
+    width: 300px;
     display: block;
     margin-bottom: 20px;
   }
   .column2 {
-  float: left;
-  width: 100%;
-  padding: 0 10px;
-}
+    float: left;
+    width: 100%;
+    padding: 0 10px;
+  }
 }
 
 @media screen and (max-width: 912px) {
-  .column {
-    width: 60%;
+  .column1 {
+    width: 300px;
     display: block;
     margin-bottom: 20px;
   }
   .column2 {
-  float: left;
-  width: 100%;
-  padding: 0 10px;
-}
+    float: left;
+    width: 100%;
+    padding: 0 10px;
+  }
 }
 /* Style the counter cards */
-.card {
+.card2 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  background-color: #f1f1f1;
+}
+
+/* Style the counter cards */
+.card3 {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 16px;
   background-color: #f1f1f1;
@@ -1225,7 +1247,7 @@ label input::selection {
 
 label p {
   color: #f1f1f1;
-  font-size: 1.2em;
+  font-size: 1.35em;
   user-select: none;
   position: absolute;
   top: 50%;
@@ -1234,6 +1256,7 @@ label p {
   padding: 0 0.4rem;
   background: #f1f1f1;
 }
+
 @media screen and (max-width: 840px) {
   label p {
     color: #f1f1f1;
@@ -1247,6 +1270,7 @@ label p {
     background: #f1f1f1;
   }
 }
+
 @media screen and (max-width: 580px) {
   label p {
     color: #f1f1f1;
@@ -1260,6 +1284,7 @@ label p {
     background: #f1f1f1;
   }
 }
+
 label input:not(:placeholder-shown) {
   border-color: #ff4754;
 }
@@ -1353,51 +1378,10 @@ input:checked + .slider2:before {
   transform: translateX(20px);
 }
 
-/* Rounded sliders */
 .slider2.round {
   border-radius: 34px;
 }
 
 .slider2.round:before {
   border-radius: 50%;
-}
-
-/* Styling for the Tooltip on the copy button */\
-.tooltip {
-  position: relative;
-  display: inline-block;
-  border-bottom: 1px dotted black;
-}
-
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 120px;
-  background-color: black;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-  
-  /* Position the tooltip */
-  position: absolute;
-  z-index: 1;
-  top: 100%;
-  left: 50%;
-  margin-left: -60px;
-}
-
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-  opacity: 1;
-}
-
-.tooltip .tooltiptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #555 transparent transparent transparent;
 }
