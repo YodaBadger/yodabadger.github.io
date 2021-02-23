@@ -120,8 +120,8 @@ input[type="reset"] {
   align-items: center;
   background-color: #ebebeb;
   color: #333;
-  padding-bottom: 100px;
-  padding-top: 200px;
+  padding-bottom: 50px;
+  padding-top: 50px;
 }
 
 .section-1 {
@@ -535,6 +535,7 @@ input[type="reset"] {
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
   text-align: left;
+  padding-top: 50px;
 }
 
 .subhead-3 {
@@ -804,10 +805,15 @@ input[type="reset"] {
 
 @media screen and (max-width: 767px) {
   .hero-section {
-  	padding-top: 50px;
+  	padding-top: 200px;
   	padding-bottom: 10px;
     height: auto;
   }
+  .section-1 {
+    padding-top: 100px;
+    padding-bottom: 70px;
+    align-items: center;
+}
 
   .hero-wrap {
     -webkit-box-orient: vertical;
@@ -943,10 +949,6 @@ input[type="reset"] {
   width: 100%;
   margin: 0 auto;
 }
-.nav-container a.active{
-  background: #C8C8C8;
-  color: #000000;
-}
 nav {
   width: 1000px;
   margin: 0 auto;
@@ -1006,7 +1008,7 @@ li.menu.closed > span:after {
 li.menu.closed > span:after {
 	transform: rotate(-45deg);
 }
-@media (max-width: 1163px) {
+@media (max-width: 1165px) {
 	nav > ul {
 		flex-direction: column;
 	}
@@ -1104,7 +1106,6 @@ nav ul li a:visited:hover {
   float: left;
   width: 300px;
   padding: 10px;
-  margin-left: 10px;
 }
 .column2 {
   float: left;
@@ -1166,11 +1167,13 @@ nav ul li a:visited:hover {
     padding: 0 10px;
   }
 }
+
 /* Style the counter cards */
 .card2 {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 16px;
   background-color: #f1f1f1;
+  height: 325px;
 }
 
 /* Style the counter cards */
@@ -1178,6 +1181,7 @@ nav ul li a:visited:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 16px;
   background-color: #f1f1f1;
+  height: 325px;
 }
 
 /* Style slider */
@@ -1299,6 +1303,10 @@ label input:placeholder-shown + p {
   color: #000000;
 }
 
+label-note{
+  color: #827c7c;
+  font-size: 17px;
+}
 /* Button */
 
 button {
