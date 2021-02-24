@@ -670,8 +670,8 @@ input[type="reset"] {
 .footer-link:hover {
 	opacity: 0.4;
 	cursor: pointer;
-	background: #C8C8C8;
-  	color: #000000;
+	background: #262626;
+  	color: #ffffff;
 }
 
 .footer-link {
@@ -1010,7 +1010,7 @@ li.menu.closed > span:after {
 li.menu.closed > span:after {
 	transform: rotate(-45deg);
 }
-@media (max-width: 1534px) {
+@media (max-width: 1577px) {
 	nav > ul {
 		flex-direction: column;
 	}
