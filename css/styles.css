@@ -437,7 +437,7 @@ input[type="reset"] {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #6b6b6b;
+  background-color: #262626;
   color: #fff;
    position: fixed;
     height: 30px;
@@ -670,6 +670,8 @@ input[type="reset"] {
 .footer-link:hover {
 	opacity: 0.4;
 	cursor: pointer;
+	background: #C8C8C8;
+  	color: #000000;
 }
 
 .footer-link {
