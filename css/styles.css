@@ -436,15 +436,25 @@ input[type="reset"] {
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
-  align-items: center;
+  align-items: left;
   background-color: #262626;
   color: #fff;
-   position: fixed;
-    height: 30px;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    margin-bottom: 0px;
+  position: fixed;
+  height: 30px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin-bottom: 0px;
+}
+
+@media screen and (max-width: 479px) {
+	.footer-link-wrap {
+  		padding-top: 30px;
+  	}
+  	.footer-top {
+    	font-size: 14px;
+    	height: 50px;
+  	}
 }
 
 .footer-top-wrap {
@@ -452,7 +462,7 @@ input[type="reset"] {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 80%;
+  width: 100%;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -webkit-flex-direction: row;
@@ -881,7 +891,7 @@ input[type="reset"] {
   }
 
   .heading-3 {
-    text-align: center;
+    /*text-align: center;*/
   }
 
   .subhead-3 {
@@ -946,7 +956,7 @@ input[type="reset"] {
   position: fixed;
   width: 100%;
   overflow: visible;
-  z-index: 10;
+  z-index: 9999;
 }
 .nav-container {
   max-width: 100%;
@@ -957,6 +967,7 @@ nav {
   width: 1000px;
   margin: 0 auto;
   list-style: none;
+  z-index: 9999;
 }
 nav > ul {
 	position: absolute;
@@ -1088,12 +1099,86 @@ nav ul li a:visited:hover {
 /* Password Checker Section */
 .card1 {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  float: left;
-  width: 80%;
+  display: inline-block;
+  width: 100%;
   height: 400px;
-  padding-left: 10%;
   background-color: #f1f1f1;
 }
+
+.field-icon {
+  z-index: 4;
+}
+
+.checkForm{
+  display: block;
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  font-size: 2rem;
+  line-height: 1.25;
+  color: #495057;
+  background-color: #f1f1f1;
+}
+
+.passwordEnter{
+  display: block;
+  width: 95%;
+  padding: 0.5rem 0.75rem;
+  font-size: 2rem;
+  line-height: 1.25;
+  color: #495057;
+  background-color: #f1f1f1;
+  background-image: none;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0.25rem;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+
+@media screen and (max-width: 1350px) {
+	.passwordEnter{
+	  width: 90%;
+	  font-size: 1.8rem;
+	}
+}
+
+@media screen and (max-width: 675px) {
+	.passwordEnter{
+	  width: 87%;
+	  font-size: 1.5rem;
+	}
+}
+
+@media screen and (max-width: 528px) {
+	.passwordEnter{
+	  width: 80%;
+	  font-size: 1rem;
+	  height: 50px;
+	}
+}
+
+.checkList{
+  padding-left: 10px;
+  width: 100%;
+}
+
+.strengthMeter{
+  width: 95%;
+  height: 60px;
+}
+meter::-webkit-meter-bar {
+  background: none;
+  background-color: rgba(0,0,0,0.1);
+}
+
+meter[value="1"]::-webkit-meter-optimum-value { background: red; }
+meter[value="2"]::-webkit-meter-optimum-value { background: yellow; }
+meter[value="3"]::-webkit-meter-optimum-value { background: orange; }
+meter[value="4"]::-webkit-meter-optimum-value { background: green; }
+
+meter[value="1"]::-moz-meter-bar { background: red; }
+meter[value="2"]::-moz-meter-bar { background: yellow; }
+meter[value="3"]::-moz-meter-bar { background: orange; }
+meter[value="4"]::-moz-meter-bar { background: green; }
 
 /* Password Generator section*/
 * {
@@ -1396,4 +1481,42 @@ input:checked + .slider2:before {
 
 .slider2.round:before {
   border-radius: 50%;
+}
+
+.video-container {
+    overflow: hidden;
+    position: relative;
+    width:100%;
+}
+
+.video-container::after {
+    padding-top: 56.25%;
+    display: block;
+    content: '';
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.about-button {
+  margin-top: -10px;
+  margin-left: 2px;
+  padding: 16px 36px;
+  border-radius: 0px;
+  background-color: #f1b503;
+  color: #23286b;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border: 0;
+  line-height: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: 'DM Sans', sans-serif;
 }
