@@ -150,14 +150,16 @@
                 }
             })
 
-            $(window).on('load', function() {
-                if(!$('.menu').hasClass('closed')){
-                    $('nav > ul > li > a').css('display', 'none');
-                }
-                else if($('.menu').hasClass('closed')) {
-                    $('nav > ul > li > a').css('display', 'block');
-                }
-            });
+	 $(window).on('load', function() {
+ 	 	if ($(document).width() < 1572) {
+	 		if(!$('.menu').hasClass('closed')){
+	 			$('nav > ul > li > a').css('display', 'none');
+	 		}
+	 		else if($('.menu').hasClass('closed')) {
+	 			$('nav > ul > li > a').css('display', 'block');
+	 		}
+	 	}
+	 });
 
 		</script>
       </div>
