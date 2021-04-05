@@ -956,13 +956,13 @@ input[type="reset"] {
   position: fixed;
   width: 100%;
   overflow: visible;
-  z-index: 9999;
+  z-index: 6666;
 }
 .nav-container {
   max-width: 100%;
   width: 100%;
   margin: 0 auto;
-  z-index: 6666;
+  z-index: 7777;
 }
 nav {
   width: 1000px;
