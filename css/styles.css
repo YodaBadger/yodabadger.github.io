@@ -962,12 +962,13 @@ input[type="reset"] {
   max-width: 100%;
   width: 100%;
   margin: 0 auto;
+  z-index: 6666;
 }
 nav {
   width: 1000px;
   margin: 0 auto;
   list-style: none;
-  z-index: 9999;
+  z-index: 5555;
 }
 nav > ul {
 	position: absolute;
