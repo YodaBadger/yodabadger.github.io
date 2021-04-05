@@ -956,19 +956,19 @@ input[type="reset"] {
   position: fixed;
   width: 100%;
   overflow: visible;
-  z-index: 6666;
+  z-index: 9997;
 }
 .nav-container {
   max-width: 100%;
   width: 100%;
   margin: 0 auto;
-  z-index: 7777;
+  z-index: 9999;
 }
 nav {
   width: 1000px;
   margin: 0 auto;
   list-style: none;
-  z-index: 5555;
+  z-index: 9998;
 }
 nav > ul {
 	position: absolute;
@@ -1094,6 +1094,7 @@ nav ul li a:visited:hover {
 .nav-container a.active{
   background: #C8C8C8;
   color: #000000;
+  z-index: 9999;
 }
 
 
