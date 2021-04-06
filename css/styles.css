@@ -120,8 +120,8 @@ input[type="reset"] {
   align-items: center;
   background-color: #ebebeb;
   color: #333;
-  padding-bottom: 50px;
-  padding-top: 50px;
+  padding-bottom: 10%;
+  padding-top: 100px;
 }
 
 .section-1 {
@@ -440,7 +440,7 @@ input[type="reset"] {
   background-color: #262626;
   color: #fff;
   position: fixed;
-  height: 30px;
+  height: 50px;
   bottom: 0px;
   left: 0px;
   right: 0px;
@@ -709,6 +709,7 @@ input[type="reset"] {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+  padding-top: 10%;
 }
 
 .caption-1 {
@@ -817,7 +818,7 @@ input[type="reset"] {
 
 @media screen and (max-width: 767px) {
   .hero-section {
-  	padding-top: 200px;
+  	padding-top: 10%;
   	padding-bottom: 10px;
     height: auto;
   }
@@ -900,7 +901,7 @@ input[type="reset"] {
 
   .hero-right {
     width: 100%;
-    padding-top: 20px;
+    padding-top: 10%;
     padding-bottom: 20px;
   }
 }
@@ -950,25 +951,33 @@ input[type="reset"] {
 /*    EVERYTHING BELOW IS NEW AND WORKS (It might rely on some other things like body html and some fonts so just saying) */
 
 /* Navigation */
+.homebutton {
+	padding-left: 5px;
+	z-index: 9999;
+	position: fixed;
+    top: 2px;
+    height: 65px;
+    width: 65px;
+}
 .navigation {
-  height: 70px;
+  height: 75px;
   background: #262626;
   position: fixed;
   width: 100%;
   overflow: visible;
-  z-index: 9997;
+  z-index: 9503;
 }
 .nav-container {
   max-width: 100%;
   width: 100%;
   margin: 0 auto;
-  z-index: 9999;
+  z-index: 9504;
 }
 nav {
-  width: 1000px;
+  width: 100%;
   margin: 0 auto;
   list-style: none;
-  z-index: 9998;
+  z-index: 9505;
 }
 nav > ul {
 	position: absolute;
@@ -1024,7 +1033,7 @@ li.menu.closed > span:after {
 li.menu.closed > span:after {
 	transform: rotate(-45deg);
 }
-@media (max-width: 1577px) {
+@media (max-width: 1587px) {
 	nav > ul {
 		flex-direction: column;
 	}
@@ -1079,7 +1088,7 @@ nav ul li a:visited {
   width: auto;
   text-align: center;
   padding: 0 20px;
-  line-height: 70px;
+  line-height: 75px;
   background: #262626;
   color: #ffffff;
   text-decoration: none;
@@ -1094,7 +1103,6 @@ nav ul li a:visited:hover {
 .nav-container a.active{
   background: #C8C8C8;
   color: #000000;
-  z-index: 9999;
 }
 
 
