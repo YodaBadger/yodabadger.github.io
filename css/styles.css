@@ -1036,6 +1036,7 @@ li.menu.closed > span:after {
 @media (max-width: 1587px) {
 	nav > ul {
 		flex-direction: column;
+		top: 5px;
 	}
 	nav > ul > li:not(.menu) {
 		margin-right: 30%;
