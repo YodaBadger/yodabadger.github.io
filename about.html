@@ -2,49 +2,93 @@
 <html>
     <head>
         <title>About</title>
-        <link href="/css/styles.css" rel="stylesheet">
-	   <link href="/images/icon.png" rel="shortcut icon">
+        <link href="css/styles.css" rel="stylesheet">
+	   <link href="images/icon.png" rel="shortcut icon">
     </head>
     <body>
       
-      	<!-- Navigation -->
-		<section class="navigation">
-		    <div class="nav-container">
-                <nav>
-		<h1 style="float: none; position: absolute; top: 50%; left: 47%; transform: translate(-50%, -50%); color: white; font-size: 40px;">Menu</h1>
-                    <ul>
-                        <li><a href="index.html">Home Page</a></li>
-                        <li><a href="passwords.html">Passwords</a></li>
-                        <li><a href="cyber.html">Cyber Breaches</a></li>
-                        <li><a href="email.html">Email Phishing</a></li>
-                        <li><a href="sharing.html">Sharing Information</a></li>
-                        <li><a href="public.html">Public WiFi</a></li>
-                        <li><a href="social.html">Social Media</a></li>
-                        <li><a href="malware.html">Malware & Viruses</a></li>
-                    	<li><a href="secure.html">Website Security</a></li>
-                        <li class="menu">
-                            <span></span>
-                        </li>
-                    </ul>
-                </nav>
+<div id="wrapper">   
+         <!-- Navigation -->
+         <div id="sidebar-wrapper">
+            <div class="sidenav">
+               <button class="dropdown-btn">
+                  <a href="index.html"><img src="images/icon-home.png" width="20" height="20" style="margin-top: -6px;"> Home Page</a> 
+               </button>
+
+               <button class="dropdown-btn">
+                  <a href="passwords.html"><img src="images/icon-passwords.png" width="20" height="20" style="margin-top: -6px;"> Passwords</a> 
+               </button>
+
+               <button class="dropdown-btn">
+                  <a href="cyber.html"><img src="images/icon-cyber.png" width="20" height="20" style="margin-top: -6px;"> Cyber Breaches</a> 
+               </button>
+
+               <button class="dropdown-btn">
+                  <a href="email.html"><img src="images/icon-email.png" width="20" height="20" style="margin-top: -6px;"> Email Phishing</a> 
+               </button>
+
+               <button class="dropdown-btn">
+                  <a href="sharing.html"><img src="images/icon-sharing.png" width="20" height="20" style="margin-top: -6px;"> Sharing Information</a> 
+               </button>
+
+               <button class="dropdown-btn">
+                  <a href="public.html"><img src="images/icon-wifi.png" width="20" height="20" style="margin-top: -6px;"> Public WiFi</a> 
+               </button>
+
+               <button class="dropdown-btn">
+                  <a href="social.html"><img src="images/icon-social.png" width="20" height="20" style="margin-top: -6px;"> Social Media</a> 
+               </button>
+
+               <button class="dropdown-btn">
+                  <a href="malware.html"><img src="images/icon-malware.png" width="20" height="20" style="margin-top: -6px;"> Malware & Viruses</a> 
+               </button>
+
+               <button class="dropdown-btn">
+                  <a href="secure.html"><img src="images/icon-website.png" width="20" height="20" style="margin-top: -6px;"> Website Security</a> 
+               </button>
+
             </div>
+
+            <!-- Menu Button -->
+            <section class="menubutton" onclick="toggleMenu()"> 
+                MENU
+            </section>
+            <!-- Hamburger style menu button -->
+            <div id="burgermenu" class="container" onclick="toggleMenu()">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+         </div>
+
+         <!-- Bar on top + Title -->
+         <section class="navigation">
+            <div class="nav-container">
+               <nav>
+                  <h1>About</h1>
+               </nav>
+            </div>
+         </section>
+
+         <!-- Home Button -->
+         <section class="homebutton"> 
+            <a href="index.html"><img src="images/logo.png" alt="Logo" width="65" height="65"></a>
         </section>
-	<section class="homebutton">
-      		<a href="index.html"><img src="/images/logo.png" alt="Logo" width="65" height="65"></a>
-      	</section>
-      
+
+
+      <!-- Main Page -->
+      <div id="page-content-wrapper">
         <!-- First Section -->	   
-        <div class="class-section">
+        <div class="hero-section">
             <div class="wrap-2 a">
                 <div class="left-1">
-                    <h2 class="heading-3" style="color: #44854b; font-family: 'Times New Roman', TimesNewRoman, Times, Baskerville, Georgia, serif; font-size: 60px; line-height: 1; font-weight: 700; letter-spacing: -0.04em;">About Us.</h2>
-                   	<p class="paragraph-2" style="font-family: 'DM Sans', sans-serif;  color: #23286b; font-size: 18px; line-height: 1.5;">                
-                    <strong>Like to know who we are?
+                    <h2 class="heading-3" style="font-size: 60px; line-height: 1; font-weight: 700; letter-spacing: -0.04em;"><u>About Us.</u></h2>
+                   	<p class="paragraph-2" style="font-size: 18px; line-height: 1.5;">                
+                    <br>Like to know who we are?
                         <br/><br/>
                         Well...
                         <br/><br/>
                         We&#x27;re passionate students who want to protect those with less technical expertise. This website has been developed to aid and improve understanding of potential attacks. Highlighting the ways users to protect themselves online. Each category has information on types of attacks and protection methods to incorporate into their routine. The hope is this website will aid older individuals, especially during the pandemic to help them during this vulnerability.
-                    </strong>
                 </p><br/>
                 <a href="index.html" class="about-button">Return Home</a>
                 </div>
@@ -52,46 +96,51 @@
         </div>
           
         <!-- Third Section -->
-        <div class="section-3" style="background-color: #303031;">
+        <div class="logos-section"></div>
+        <div class="section-3">
             <div class="wrap-3">
-                <h2 class="heading-5" style="color: #44854b; font-family: 'Times New Roman', TimesNewRoman, Times, Baskerville, Georgia, serif; font-size: 60px; line-height: 1; font-weight: 700; letter-spacing: -0.04em;">Our aim...</h2>
+                <h2 class="heading-5" style="color: #44854b; font-size: 60px; line-height: 1; font-weight: 700; letter-spacing: -0.04em;"><u>Our aim...</u></h2>
                 <br/>
-    			<p class="paragraph-2" style="font-family: 'DM Sans', sans-serif;  color: white; font-size: 18px; line-height: 1.5;"><strong>This website has been developed to aid understanding of potential attacks and highlight the ways in which users can protect themselves online. The hope is that this website will aid the older generation, especially during the pandemic, in protecting themselves whilst online.</strong></p>
+    			<p class="paragraph-2" style="color: black; font-size: 18px; line-height: 1.5;">This website has been developed to aid understanding of potential attacks and highlight the ways in which users can protect themselves online. The hope is that this website will aid the older generation, especially during the pandemic, in protecting themselves whilst online.</p>
     			<br/>
-                <h2 class="heading-5" style="color: #44854b; font-family: 'Times New Roman', TimesNewRoman, Times, Baskerville, Georgia, serif; font-size: 60px; line-height: 1; font-weight: 700; letter-spacing: -0.04em;">What areas do we cover..</h2>
+                <h2 class="heading-5" style="color: #44854b; font-size: 60px; line-height: 1; font-weight: 700; letter-spacing: -0.04em;"><u>What areas do we cover..</u></h2>
                 <br/>
-                <p class="paragraph-2" style="font-family: 'DM Sans', sans-serif;  color: white; font-size: 18px; line-height: 1.5;"><strong>•    Passwords<br/>•    Cyber Breaches<br/>•    Phishing<br/>•    Sharing Information Online<br/>•    Public Wi-Fi<br/>•    Social Media<br/>•    Malware and Viruses<br/>•    How to tell a website is secure</strong></p>
+                <p class="paragraph-2" style="color: black; font-size: 18px; line-height: 1.5;">•    Passwords<br/>•    Cyber Breaches<br/>•    Phishing<br/>•    Sharing Information Online<br/>•    Public Wi-Fi<br/>•    Social Media<br/>•    Malware and Viruses<br/>•    How to tell a website is secure</p>
             </div>
             <div class="wrap-1">
-                <h2 class="heading-3" style="color: #44854b; font-family: 'Times New Roman', TimesNewRoman, Times, Baskerville, Georgia, serif; font-size: 60px; line-height: 1; font-weight: 700; letter-spacing: -0.04em;">Or....why not...</h2>
+                <h2 class="heading-3" style="color: #44854b; font-size: 60px; line-height: 1; font-weight: 700; letter-spacing: -0.04em;"><u>Or....why not...</u></h2>
 
                 <div class="column-wrap-1">
 
-                    <div class="column-1" style="background-color: #303031; padding: 0px, 0px, 10px, 0px;">
+                    <div class="column-1" style="background-color: #364d32; padding: 0px, 0px, 10px, 0px;">
                         <img src="images/squares.png" width="75" alt="Square Icon" class="icon"/>
-                        <h4 class="column-1-title" style="padding-right: 0px; padding-left: 0px; color: #44854b;">Find your password.</h4>
+                        <h4 class="column-1-title" style="padding-right: 0px; padding-left: 0px; color: white; font-size: 24px;"><b><u>Find your password.</u></b></h4>
                         <p class="paragraph-3" style="font-family: 'DM Sans', sans-serif;  color: white; font-size: 18px; line-height: 1.5;">Trust nobody not even yourself. Have our own password generator jump-start your creativity....securely.</p>
                         <br/>
                         <a href="passwords.html" class="about-button">PASSWORDS</a>
                     </div>
 
-                    <div class="column-1" style="background-color: #303031; padding: 0px, 0px, 10px, 0px;">
+                    <div class="column-1" style="background-color: #364d32; padding: 0px, 0px, 10px, 0px;">
                         <img src="images/money.png" width="75" alt="Money Icon" class="icon"/>
-                        <h4 class="column-1-title" style="padding-right: 0px; padding-left: 0px; color: #44854b;">Explore a world of hidden phishing attacks.</h4>
+                        <h4 class="column-1-title" style="padding-right: 0px; padding-left: 0px; color: white; font-size: 24px;"><b><u>Explore a world of hidden phishing attacks.</u></b></h4>
                         <p class="paragraph-3" style="font-family: 'DM Sans', sans-serif;  color: white; font-size: 18px; line-height: 1.5;">With the rising rates of online transactions, who wouldn&#x27;t be interested in understanding the psychology behind socially engineered phishing attacks? Double-click explore the different types of phishing attacks.</p>
                         <br/>
                         <a href="email.html" class="about-button">PHISHING</a>
                     </div>
 
-                    <div class="column-1" style="background-color: #303031; padding: 0px, 0px, 10px, 0px;">
+                    <div class="column-1" style="background-color: #364d32; padding: 0px, 0px, 10px, 0px;">
                         <img src="images/chair.png" width="75" alt="Chair Icon" class="icon"/>
-                        <h4 class="column-1-title" style="padding-right: 0px; padding-left: 0px; color: #44854b;">Understand the game</h4>
+                        <h4 class="column-1-title" style="padding-right: 0px; padding-left: 0px; color: white; font-size: 24px;"><b><u>Understand the game</u></b></h4>
                         <p class="paragraph-3" style="font-family: 'DM Sans', sans-serif;  color: white; font-size: 18px; line-height: 1.5;">Find out how hackers are exploiting online architecture to steal millions without leaving their chairs.</p>
                         <br/>
                         <a href="malware.html" class="about-button">MALWARE</a>
                     </div>
-
                 </div>
+                </div> 
+            </div>
+      <div class="b2t-container">
+      <button onclick="b2t()" title="Go to top"><p class="back2top"><img src="images/up.png" width="20" height="25" style="padding-bottom: 5px;"><strong> Back to Top </strong><img src="images/up.png" width="20" height="25" style="padding-bottom: 5px;"></p></button>
+      </div>
             </div>
         </div>
           <!-- Footer -->
@@ -108,44 +157,26 @@
     		<script>
 
             // Navigation //
-            var $nav = $('nav > ul');
-            var $btnMenu = $('.menu');
+            function toggleMenu() {
+              // Activate the hamburger menu button //
+              document.getElementById("burgermenu").classList.toggle("change");
 
-            $btnMenu.click(function() {
-                $nav.find('li:not(.menu)').toggleClass('animate');
-                $btnMenu.toggleClass('closed');
-                if(!$('.menu').hasClass('closed')){
-                    $('nav > ul > li > a').css('display', 'none');
-                }
-                else if($('.menu').hasClass('closed')) {
-                    $('nav > ul > li > a').css('display', 'block');
-                }
-                
-            })
+              // Open or Close Nav Bar //
+              document.getElementById('sidebar-wrapper').classList.toggle("toggled");
+              document.getElementById('page-content-wrapper').classList.toggle("toggled");
+            }
 
+            // When window is resized close menu if open //
             $(window).resize(function() {
-                if ($(document).width() > 1572) {
-                    $btnMenu.removeClass('closed');
-                    $nav.find('li').removeAttr('style')
-                    $nav.find('li').removeClass('animate');
-                    $('nav > ul > li > a').css('display', 'block');
-                }
-                else{
-                    $('nav > ul > li > a').css('display', 'none');
-                }
-            })
-
-			$(window).on('load', function() {
- 				if ($(document).width() < 1572) {
-	 				if(!$('.menu').hasClass('closed')){
-						$('nav > ul > li > a').css('display', 'none');
-					}
-					else if($('.menu').hasClass('closed')) {
-						$('nav > ul > li > a').css('display', 'block');
-					}
-				}
-			});
-            
+              if($('.toggled')[0]){
+                toggleMenu();
+              }
+                  })
+            // Back to Top //
+         function b2t() {
+           document.body.scrollTop = 0; // For Safari
+           document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+         }
     		</script>
           </div>
        </body>
