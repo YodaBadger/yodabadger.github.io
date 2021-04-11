@@ -7,46 +7,99 @@
    </head>
    <body>
       
-      	<!-- Navigation -->
-		<section class="navigation">
-		  <div class="nav-container">
-		    <nav>
-			    <h1 style="float: none; position: absolute; top: 50%; left: 47%; transform: translate(-50%, -50%); color: white; font-size: 40px;">Menu</h1>
-		      <ul>
-		        <li><a href="index.html">Home Page</a></li>
-		        <li><a href="passwords.html">Passwords</a></li>
-		        <li><a href="cyber.html">Cyber Breaches</a></li>
-		        <li><a href="email.html">Email Phishing</a></li>
-		        <li><a href="sharing.html">Sharing Information</a></li>
-		        <li><a class="active" href="public.html">Public WiFi</a></li>
-		        <li><a href="social.html">Social Media</a></li>
-			<li><a href="malware.html">Malware & Viruses</a></li>
-                	<li><a href="secure.html">Website Security</a></li>
-		        <li class="menu">
-		        	<span></span>
-		        </li>
-		      </ul>
-		    </nav>
-		  </div>
-		</section>
-	   <section class="homebutton">
-      		<a href="index.html"><img src="/images/logo.png" alt="Logo" width="65" height="65"></a>
-      	</section>
-      
+<div id="wrapper">   
+         <!-- Navigation -->
+         <div id="sidebar-wrapper">
+            <div class="sidenav">
+               <button class="dropdown-btn">
+                  <a href="index.html"><img src="images/icon-home.png" width="20" height="20" style="margin-top: -6px;"> Home Page</a> 
+               </button>
+
+               <button class="dropdown-btn">
+                  <a href="passwords.html"><img src="images/icon-passwords.png" width="20" height="20" style="margin-top: -6px;"> Passwords</a> 
+               </button>
+
+
+               <button class="dropdown-btn">
+                  <a href="cyber.html"><img src="images/icon-cyber.png" width="20" height="20" style="margin-top: -6px;"> Cyber Breaches</a> 
+               </button>
+
+               <button class="dropdown-btn">
+                  <a href="email.html"><img src="images/icon-email.png" width="20" height="20" style="margin-top: -6px;"> Email Phishing</a> 
+               </button>
+
+               <button class="dropdown-btn">
+                  <a href="sharing.html"><img src="images/icon-sharing.png" width="20" height="20" style="margin-top: -6px;"> Sharing Information</a> 
+               </button>
+
+               <button class="dropdown-btn active">
+                  <a href="public.html"><img src="images/icon-wifi.png" width="20" height="20" style="margin-top: -6px;"> Public WiFi</a> 
+               </button>
+               <div class="dropdown-container" style="display: block;">
+                  <a href="#page-content-wrapper">Introduction</a>
+                  <a href="#attacks">Public WiFi Attacks</a>
+                  <a href="#protection">Stay Protected</a>
+               </div>
+
+               <button class="dropdown-btn">
+                  <a href="social.html"><img src="images/icon-social.png" width="20" height="20" style="margin-top: -6px;"> Social Media</a> 
+               </button>
+
+               <button class="dropdown-btn">
+                  <a href="malware.html"><img src="images/icon-malware.png" width="20" height="20" style="margin-top: -6px;"> Malware & Viruses</a> 
+               </button>
+
+               <button class="dropdown-btn">
+                  <a href="secure.html"><img src="images/icon-website.png" width="20" height="20" style="margin-top: -6px;"> Website Security</a> 
+               </button>
+
+            </div>
+
+            <!-- Menu Button -->
+            <section class="menubutton" onclick="toggleMenu()"> 
+               MENU
+            </section>
+            <!-- Hamburger style menu button -->
+            <div id="burgermenu" class="container" onclick="toggleMenu()">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+         </div>
+         </div>
+
+       <!-- Bar on top + Title -->
+         <section class="navigation">
+            <div class="nav-container">
+               <nav>
+                  <h1>Public WiFi</h1>
+               </nav>
+            </div>
+         </section>
+
+         <!-- Home Button -->
+         <section class="homebutton"> 
+            <a href="index.html"><img src="images/logo.png" alt="Logo" width="65" height="65"></a>
+         </section>
+
+
+      <!-- Main Page -->
+      <div id="page-content-wrapper">
+
 	    <!-- First Section -->
 	    <div class="hero-section">
 	    	<div>
-	        	<h1 class="heading-1">Public WIFI</h1>
-				<p class="subhead-1"><strong>Public free Wi-Fi is widely available in most restaurants, pubs and even on public transport. This may seem convenient, however, there are many risks to using free public Wi-Fi.</strong></p>
+	        	<h1 class="heading-1"><strong><u>Public WIFI</u></strong></h1><br>
+				<p style="padding-left: 20%; padding-right: 20%; width:100%; text-align: center;">Public free Wi-Fi is widely available in most restaurants, pubs and even on public transport. This may seem convenient, however, there are many risks to using free public Wi-Fi.</p>
 	        </div>
 	        <img style="padding-top: 50px;" src="images/wifi.png" width="239" sizes="(max-width: 479px) 100vw, 239px" alt="WiFi Symbol"/>
 	    </div>
 		   
 	    <!-- Second Section -->
+      <div class="logos-section" id="attacks"></div>
 	    <div class="section-3">
 	    	<div class="wrap-2 a">
 		        <div class="left-1">
-		            <h2 class="heading-5">Evil Twin Attack</h2>
+		            <h2 class="heading-5"><strong><u>Evil Twin Attack</u></strong></h2>
 					<p class="paragraph-2">his attack basically takes a legitimate Wi-Fi point and duplicates the name in an attempt to intercept your private and most valuable data. The most common place for this to happen is at coffee shops and airport hotspots. This type of attack does not always need the person to connect to the Wi-Fi network themselves, which makes it all the more dangerous.</p>
 		        </div>
 
@@ -60,44 +113,50 @@
             		<img src="images/mitm.png" width="500" sizes="(max-width: 767px) 80vw, 40vw" alt="Diagram of a 'man in the middle' attack"/>
             	</div>
             	<div class="right-2">
-	            	<h2 class="heading-5">Man-in-the-Middle Attack</h2>
+	            	<h2 class="heading-5"><strong><u>Man-in-the-Middle Attack</u></strong></h2>
 					<p class="paragraph-2">The main issue with using public Wi-Fi is that it is more often than not unsecured and unencrypted. This can create major issues when sending and receiving data/ messages over public Wi-Fi. The Man-in-the-middle-attack works when the attacker intercepts the travelling data packets that are travelling between two people. For example, through eavesdropping, they will intercept messages between two people that believe they are talking privately in an attempt to steal private and valuable information.</p>
             	</div>
          	</div>
 	    </div>
 
 		<!-- Second Section -->
-	    <div class="section-1">
+      <div class="logos-section" id="protection"></div>
+	    <div class="section-1" style="padding-bottom: 0px;">
 	        <div class="wrap-1">
 	        	<h1>
 				<strong>
-					How do you stay protected over public Wi-Fi?
+					<u>How do you stay protected over public Wi-Fi?</u>
 				</strong>
 			</h1>
 			<br><br>
 			<p>
 				<strong>
-					Be careful of the information and websites you access:
+					<u>Be careful of the information and websites you access:</u>
 				</strong>
 			</p>
 			<p class="paragraph-5">When you use public Wi-Fi, it is important that you do not access any sensitive information when you are connected. Anything from looking for directions or browsing sites like YouTube is safe to do so on public Wi-Fi. However, it is recommended that if you want to pay bills or make a purchase online, do not do it over public Wi-Fi and wait until you get home.
 			</p>
 			<p>
 				<strong>
-					Turn off file sharing:
+					<u>Turn off file sharing:</u>
 				</strong>
 			</p>
 			<p class="paragraph-5">When you are connected to public Wi-Fi, it is important for you to keep file sharing turned off. The reason for this being that your files may be visible and accessible to anyone who is connected to the same public Wi-Fi network as you.
 			</p>
 			<p>
 				<strong>
-					Use a privacy screen when accessing public Wi-Fi:
+					<u>Use a privacy screen when accessing public Wi-Fi:</u>
 				</strong>
 			</p>
 			<p class="paragraph-5">A privacy screen is a very useful tool to use if you have no choice but to access private information on public Wi-Fi. What this does is it darkens your display a considerable amount so that it is only visible to you. This is very useful as it allows you to feel safe from anyone wanting to take a photo or copy down any of the information you have on your screen.
 			</p>
 	        </div>
-	    </div>
+	    </div> 
+      <div class="b2t-container" style="background: #364d32;">
+      <button onclick="b2t()" title="Go to top" style="background-image: linear-gradient(#364d32, rgba(38,38,38,1));"><p class="back2top"><img src="images/up.png" width="20" height="25" style="padding-bottom: 5px;"><strong> Back to Top </strong><img src="images/up.png" width="20" height="25" style="padding-bottom: 5px;"></p></button>
+      </div>
+  </div>
+</div>
 
 	      
 	      <!-- Footer -->
@@ -114,44 +173,26 @@
 			<script>
 
 			// Navigation //
-			var $nav = $('nav > ul');
-			var $btnMenu = $('.menu');
+			function toggleMenu() {
+			  // Activate the hamburger menu button //
+			  document.getElementById("burgermenu").classList.toggle("change");
 
-			$btnMenu.click(function() {
-				$nav.find('li:not(.menu)').toggleClass('animate');
-				$btnMenu.toggleClass('closed');
-				if(!$('.menu').hasClass('closed')){
-					$('nav > ul > li > a').css('display', 'none');
-				}
-				else if($('.menu').hasClass('closed')) {
-					$('nav > ul > li > a').css('display', 'block');
-				}
-				
-			})
+			  // Open or Close Nav Bar //
+			  document.getElementById('sidebar-wrapper').classList.toggle("toggled");
+			  document.getElementById('page-content-wrapper').classList.toggle("toggled");
+			}
 
+			// When window is resized close menu if open //
 			$(window).resize(function() {
-				if ($(document).width() > 1572) {
-					$btnMenu.removeClass('closed');
-					$nav.find('li').removeAttr('style')
-					$nav.find('li').removeClass('animate');
-					$('nav > ul > li > a').css('display', 'block');
-				}
-				else{
-					$('nav > ul > li > a').css('display', 'none');
-				}
-			})
-
-			 $(window).on('load', function() {
-				if ($(document).width() < 1572) {
-					if(!$('.menu').hasClass('closed')){
-						$('nav > ul > li > a').css('display', 'none');
-					}
-					else if($('.menu').hasClass('closed')) {
-						$('nav > ul > li > a').css('display', 'block');
-					}
-				}
-			 });
-			
+			 	if($('.toggled')[0]){
+			 		toggleMenu();
+			 	}
+            })
+			// Back to Top //
+         function b2t() {
+           document.body.scrollTop = 0; // For Safari
+           document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+         }
 			</script>
 	    </div>
    	</body>
