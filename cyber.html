@@ -1,164 +1,227 @@
 <!DOCTYPE html>
 <html>
-   <head>
-      <title>Cyber</title>
-      <link href="css/styles.css" rel="stylesheet">
-	  <link href="images/icon.png" rel="shortcut icon">
-   </head>
-   <body>
+   	<head>
+      	<title>Cyber</title>
+      	<link href="css/styles.css" rel="stylesheet">
+	  	<link href="images/icon.png" rel="shortcut icon">
+   	</head>
+   	<body>
       
-      	<!-- Navigation -->
-		<section class="navigation">
-		  <div class="nav-container">
-		    <nav>
-			    <h1 style="float: none; position: absolute; top: 50%; left: 47%; transform: translate(-50%, -50%); color: white; font-size: 40px;">Menu</h1>
-		      <ul>
-		        <li><a href="index.html">Home Page</a></li>
-		        <li><a href="passwords.html">Passwords</a></li>
-		        <li><a class="active" href="cyber.html">Cyber Breaches</a></li>
-		        <li><a href="email.html">Email Phishing</a></li>
-		        <li><a href="sharing.html">Sharing Information</a></li>
-		        <li><a href="public.html">Public WiFi</a></li>
-		        <li><a href="social.html">Social Media</a></li>
-				<li><a href="malware.html">Malware & Viruses</a></li>
-				<li><a href="secure.html">Website Security</a></li>
-		        <li class="menu">
-		          <span></span>
-		        </li>
-		      </ul>
-		    </nav>
-		  </div>
-		</section>
-	   <section class="homebutton">
-      		<a href="index.html"><img src="/images/logo.png" alt="Logo" width="65" height="65"></a>
-      	</section>
-      
-      <!-- First Section -->
+		<div id="wrapper">   
+	        <!-- Navigation -->
+	        <div id="sidebar-wrapper">
+	            <div class="sidenav">
+	               <button class="dropdown-btn">
+	                  <a href="index.html"><img src="images/icon-home.png" width="20" height="20" style="margin-top: -6px;"> Home Page</a> 
+	               </button>
+
+	               <button class="dropdown-btn">
+	                  <a href="passwords.html"><img src="images/icon-passwords.png" width="20" height="20" style="margin-top: -6px;"> Passwords</a> 
+	               </button>
+
+
+	               <button class="dropdown-btn active">
+	                  <a href="cyber.html"><img src="images/icon-cyber.png" width="20" height="20" style="margin-top: -6px;"> Cyber Breaches</a> 
+	               </button>
+	               <div class="dropdown-container" style="display: block;">
+	                  <a href="#page-content-wrapper">Introduction</a>
+	                  <a href="#dataleakage">Data Leakage</a>
+	                  <a href="#breachstatistics">Breach Statistics</a>
+	                  <a href="#cybertips">Cyber Breach Tips</a>
+	               </div>
+
+	               <button class="dropdown-btn">
+	                  <a href="email.html"><img src="images/icon-email.png" width="20" height="20" style="margin-top: -6px;"> Email Phishing</a> 
+	               </button>
+
+	               <button class="dropdown-btn">
+	                  <a href="sharing.html"><img src="images/icon-sharing.png" width="20" height="20" style="margin-top: -6px;"> Sharing Information</a> 
+	               </button>
+
+	               <button class="dropdown-btn">
+	                  <a href="public.html"><img src="images/icon-wifi.png" width="20" height="20" style="margin-top: -6px;"> Public WiFi</a> 
+	               </button>
+
+	               <button class="dropdown-btn">
+	                  <a href="social.html"><img src="images/icon-social.png" width="20" height="20" style="margin-top: -6px;"> Social Media</a> 
+	               </button>
+
+	               <button class="dropdown-btn">
+	                  <a href="malware.html"><img src="images/icon-malware.png" width="20" height="20" style="margin-top: -6px;"> Malware & Viruses</a> 
+	               </button>
+
+	               <button class="dropdown-btn">
+	                  <a href="secure.html"><img src="images/icon-website.png" width="20" height="20" style="margin-top: -6px;"> Website Security</a> 
+	               </button>
+
+	            </div>
+
+	            <!-- Menu Button -->
+	            <section class="menubutton" onclick="toggleMenu()"> 
+	           		MENU
+	      		</section>
+	           	<!-- Hamburger style menu button -->
+	      		<div id="burgermenu" class="container" onclick="toggleMenu()">
+	  				<div class="bar1"></div>
+	  				<div class="bar2"></div>
+	  				<div class="bar3"></div>
+				</div>
+	        </div>
+
+			 <!-- Bar on top + Title -->
+	         <section class="navigation">
+	            <div class="nav-container">
+	               <nav>
+	   			      <h1>Cyber Breaches</h1>
+	               </nav>
+	            </div>
+	         </section>
+
+	         <!-- Home Button -->
+	         <section class="homebutton"> 
+	            <a href="index.html"><img src="images/logo.png" alt="Logo" width="65" height="65"></a>
+	      	</section>
+
+
+		    <!-- Main Page -->
+		    <div id="page-content-wrapper">
+
+      		<!-- First Section -->
 			<div class="cyber-section">
 				<div class="cyber-wrap">
 					<div class="cyber-left">
-						<h1 class="heading-3"><strong>Cyber Breaches</strong></h1>
+						<h1 class="heading-3"><strong><u>Cyber Breaches</u></strong></h1>
 						<br />
-						<p><strong>A cyber/data breach is when a company intentionally or unintentionally releases private information of its users to a malicious source.</strong></p>
+						<p>A cyber/data breach is when a company intentionally or unintentionally releases private information of its users to a malicious source.</p>
 					</div>
 					<div class="cyber-right"><img src="images/cyber1.jpeg" width="240"></div>
 				</div>
 			</div>
       
       
-      <!-- Second Section -->
- 	<div class="class-section">
-	        <div class="wrap-1">
-	        	<div class="wrap-3">
-					<h2 class="heading-3"><strong>Data leaked from companies is often later sold on various illegal markets</strong></h2><br/>
-		            <p style="text-align: left;"> Typical information which is stolen:</p>
-					<p style="text-align: left;"> - Names</p>
-					<p style="text-align: left;"> - Date of birth</p>
-					<p style="text-align: left;"> - Credit card information</p>
-					<p style="text-align: left;"> - Emails</p>
-					<p style="text-align: left;"> - Locations</p>
-					<p style="text-align: left;"> - Healthcare details</p>
-										
-		            <br/>
+		    <!-- Second Section -->
+		    <div class="logos-section" id="dataleakage"></div>
+		 	<div class="class-section">
+			        <div class="wrap-1">
+			        	<div class="wrap-3">
+							<h2 class="heading-3"><strong><u>Data leaked from companies is often later sold on various illegal markets</u></strong></h2><br/>
+				            <p style="text-align: left;"> Typical information which is stolen:</p>
+							<p style="text-align: left;"> - Names</p>
+							<p style="text-align: left;"> - Date of birth</p>
+							<p style="text-align: left;"> - Credit card information</p>
+							<p style="text-align: left;"> - Emails</p>
+							<p style="text-align: left;"> - Locations</p>
+							<p style="text-align: left;"> - Healthcare details</p>
+												
+				            <br/>
 
-		            <p style="text-align: left;">If a company suffers from a data breach, and a violation of the law is committed with the stolen information, the attackers are given fines or worse depending on the acts committed.</p>
-		            <p style="text-align: left;">Attackers often do research on the companies before they attack which will allow them to identify vulnerabilities in the security. This could involve weaknesses such as employees or the systems themselves.</p>
-					<p style="text-align: left;">Next comes the attack, where the cybercriminals exploit either the network or the a certain person in order to gain unlawful access into confidential data.</p>
-					
-					<br/>
-					
-					<h4 style="text-align: left;"><strong>Who is affected?</strong></h4>
-					<p style="text-align: left;">Even though it is companies and organisations who are attacked at first, the real target is the users/customers. The information given by you is what the attackers are after. This information is valuable to them because the attackers can sell it, use it to commit fraud or even launch more attacks online.</p>
-		            <p style="text-align: left;">There is no specific size of company which are targeted for cyber breach attacks because every company has valuable data. From large organisations like Adobe or MyFitnessPal to much smaller companies like Adult Friend Finder. All of these companies have been victims of cyber breaches with the impact of the attack causing a large amount of private user information to be leaked.</p>
-					
-					<br />
-					
-					<h4 style="text-align: left;"><strong>Why does it happen?</strong></h4>
-					<p style="text-align: left;"> Like all cybercrime, profit is the main aim and gain.</p>
-					<p style="text-align: left;"> Hackers can steal money, steal identities or sell the information gained onto the dark web.</p>
-					<p style="text-align: left;"> These leaks can sometimes be accidental but a large majority is due to a targeted attack.</p>
-					<p style="text-align: left;"> Just like with any other cybercrime, there are measures which could be taken to prevent attacks but are sometimes forgotten which cause attacks to happen:</p>
-					<p style="text-align: left;"> •    Weak passwords would allow easy access for cybercriminals to steal data, with some cases being that the cybercriminals simply guess the password due to it containing whole words or phrases.</p>
-					<p style="text-align: left;"> •    If an unintentional virus or malicious software is downloaded onto a machine through something as simple as visiting a webpage or application which is out of date or has flaws in its security.</p>
-					<p style="text-align: left;"> •    Attackers are able to exploit vulnerabilities in systems such as out-dated software so they can get malware onto a computer or network allowing data to be stolen.</p>
-					
-					<br />
-					
-					<h4 style="text-align: left;"><strong>How it happens and how to prevent it</strong></h4>
-					<p style="text-align: left;"> 45% of data breaches are from criminal hacking. They gain unlawful access to the data stored by organisations.</p>
-					<p style="text-align: left;"> The most popular hacking technique included stealing credentials of users then selling them on the dark web.</p>
-					<p style="text-align: left;"> Once hackers have your login credentials, they can do acts such as selling them to committing fraud.</p>
-					<p style="text-align: left;"> The stolen details could even be used to launch other attacks like phishing.</p>
-            </div>
+				            <p style="text-align: left;">If a company suffers from a data breach, and a violation of the law is committed with the stolen information, the attackers are given fines or worse depending on the acts committed.</p>
+				            <p style="text-align: left;">Attackers often do research on the companies before they attack which will allow them to identify vulnerabilities in the security. This could involve weaknesses such as employees or the systems themselves.</p>
+							<p style="text-align: left;">Next comes the attack, where the cybercriminals exploit either the network or the a certain person in order to gain unlawful access into confidential data.</p>
+							
+							<br/>
+							
+							<h4 style="text-align: left;"><strong>Who is affected?</strong></h4>
+							<p style="text-align: left;">Even though it is companies and organisations who are attacked at first, the real target is the users/customers. The information given by you is what the attackers are after. This information is valuable to them because the attackers can sell it, use it to commit fraud or even launch more attacks online.</p>
+				            <p style="text-align: left;">There is no specific size of company which are targeted for cyber breach attacks because every company has valuable data. From large organisations like Adobe or MyFitnessPal to much smaller companies like Adult Friend Finder. All of these companies have been victims of cyber breaches with the impact of the attack causing a large amount of private user information to be leaked.</p>
+							
+							<br />
+							
+							<h4 style="text-align: left;"><strong>Why does it happen?</strong></h4>
+							<p style="text-align: left;"> Like all cybercrime, profit is the main aim and gain.</p>
+							<p style="text-align: left;"> Hackers can steal money, steal identities or sell the information gained onto the dark web.</p>
+							<p style="text-align: left;"> These leaks can sometimes be accidental but a large majority is due to a targeted attack.</p>
+							<p style="text-align: left;"> Just like with any other cybercrime, there are measures which could be taken to prevent attacks but are sometimes forgotten which cause attacks to happen:</p>
+							<p style="text-align: left;"> •    Weak passwords would allow easy access for cybercriminals to steal data, with some cases being that the cybercriminals simply guess the password due to it containing whole words or phrases.</p>
+							<p style="text-align: left;"> •    If an unintentional virus or malicious software is downloaded onto a machine through something as simple as visiting a webpage or application which is out of date or has flaws in its security.</p>
+							<p style="text-align: left;"> •    Attackers are able to exploit vulnerabilities in systems such as out-dated software so they can get malware onto a computer or network allowing data to be stolen.</p>
+							
+							<br />
+							
+							<h4 style="text-align: left;"><strong>How it happens and how to prevent it</strong></h4>
+							<p style="text-align: left;"> 45% of data breaches are from criminal hacking. They gain unlawful access to the data stored by organisations.</p>
+							<p style="text-align: left;"> The most popular hacking technique included stealing credentials of users then selling them on the dark web.</p>
+							<p style="text-align: left;"> Once hackers have your login credentials, they can do acts such as selling them to committing fraud.</p>
+							<p style="text-align: left;"> The stolen details could even be used to launch other attacks like phishing.</p>
+		            </div>
+				</div>
 			</div>
-			</div>
+
 			<!-- Third Section -->
+			<div class="logos-section" id="breachstatistics"></div>
 			<div class="section-1">
-				<div class="cyber-wrap-2">
-					<div class="cyber-left">
-						<p><strong>22% of data breaches are from human error within the company. The error could involve sending confidential information to the wrong person, or leaving sensitive data open without any protection</strong></p>
+					<h1 class="heading-3"><strong><u>Breach Statistics</u></strong></h1><br />
+						<div class="cyber-wrap-2">
+							<div class="cyber-left">
+								<p><font color="#7ea66c"><b>22%</b></font> of data breaches are from human error within the company. The error could involve sending confidential information to the wrong person, or leaving sensitive data open without any protection</p>
+							</div>
+							<div class="cyber-right"><img src="images/cyber2.jpeg" width="240"></div>
+						</div>
+						<div class="cyber-wrap-2">
+							<div class="cyber-right"><img src="images/cyber3.jpeg" width="240"></div>
+							<div class="cyber-left">
+							<p><font color="#7ea66c"><b>22%</b></font> of data breaches happen due to social engineering. Such as phishing. Once the data is acquired, the attacker commits fraud, sells the data or contacts organisations which have that data stored in order to gain more information about the user.</p>
+							</div>
+						</div>
+						<div class="cyber-wrap-2">
+							<div class="cyber-left">
+								<p><font color="#7ea66c"><b>17%</b></font> of data is breached from malware <br> The attackers apply malicious software onto the target devices within the company which can grab sensitive information which the company stores. Keyloggers are used to steal passwords or other sensitive information inputted by employees.</p>
+							</div>
+							<div class="cyber-right"><img src="images/cyber4.jpeg" width="240"></div>
+						</div>
 					</div>
-					<div class="cyber-right"><img src="images/cyber2.jpeg" width="240"></div>
-				</div>
-				<div class="cyber-wrap-2">
-					<div class="cyber-right"><img src="images/cyber3.jpeg" width="240"></div>
-					<div class="cyber-left">
-					<p><strong>22% of data breaches happen due to social engineering. Such as phishing. Once the data is acquired, the attacker commits fraud, sells the data or contacts organisations which have that data stored in order to gain more information about the user.</strong></p>
-					</div>
-				</div>
-				<div class="cyber-wrap-2">
-					<div class="cyber-left">
-						<p><strong>17% of data is breached from malware <br> The attackers apply malicious software onto the target devices within the company which can grab sensitive information which the company stores. Keyloggers are used to steal passwords or other sensitive information inputted by employees.</strong></p>
-					</div>
-					<div class="cyber-right"><img src="images/cyber4.jpeg" width="240"></div>
-				</div>
-			</div>
-			
-			      <!-- Fourth Section -->
- 	<div class="class-section">
-	        <div class="wrap-1">
-	        	<div class="wrap-3">
-					<h2 class="heading-3"><strong>Tip: A keylogger is a malicious software which monitors keys pressed on a keyboard</strong></h2><br/>
-		            <p style="text-align: left;"> Typical information which is stolen:</p>
-					<p style="text-align: left;"> - Names</p>
-					<p style="text-align: left;"> - Date of birth</p>
-					<p style="text-align: left;"> - Credit card information</p>
-					<p style="text-align: left;"> - Emails</p>
-					<p style="text-align: left;"> - Locations</p>
-					<p style="text-align: left;"> - Healthcare details</p>
-										
-		            <br/>
+					
+					      <!-- Fourth Section -->
+					<div class="logos-section" id="cybertips"></div>
+		 			<div class="class-section">
+				        <div class="wrap-1">
+				        	<div class="wrap-3">
+								<h2 class="heading-3"><strong><u>Tip: A keylogger is a malicious software which monitors keys pressed on a keyboard</u></strong></h2><br/>
+					            <p style="text-align: left;"> <b><u>Typical information which is stolen:</p></b></u>
+								<p style="text-align: left;"> - Names</p>
+								<p style="text-align: left;"> - Date of birth</p>
+								<p style="text-align: left;"> - Credit card information</p>
+								<p style="text-align: left;"> - Emails</p>
+								<p style="text-align: left;"> - Locations</p>
+								<p style="text-align: left;"> - Healthcare details</p>
+													
+					            <br/>
 
-		            <p style="text-align: left;">If a company suffers from a data breach, and a violation of the law is committed with the stolen information, the attackers are given fines or worse depending on the acts committed.</p>
-		            <p style="text-align: left;">Attackers often do research on the companies before they attack which will allow them to identify vulnerabilities in the security. This could involve weaknesses such as employees or the systems themselves.</p>
-					<p style="text-align: left;">Next comes the attack, where the cybercriminals exploit either the network or the a certain person in order to gain unlawful access into confidential data.</p>
-					
-					<br/>
-					
-					<h4 style="text-align: left;"><strong>Who is affected?</strong></h4>
-					<p style="text-align: left;">Even though it is companies and organisations who are attacked at first, the real target is the users/customers. The information given by you is what the attackers are after. This information is valuable to them because the attackers can sell it, use it to commit fraud or even launch more attacks online.</p>
-		            <p style="text-align: left;">There is no specific size of company which are targeted for cyber breach attacks because every company has valuable data. From large organisations like Adobe or MyFitnessPal to much smaller companies like Adult Friend Finder. All of these companies have been victims of cyber breaches with the impact of the attack causing a large amount of private user information to be leaked.</p>
-					
-					<br />
-					
-					<h4 style="text-align: left;"><strong>Why does it happen?</strong></h4>
-					<p style="text-align: left;"> Like all cybercrime, profit is the main aim and gain.</p>
-					<p style="text-align: left;"> Hackers can steal money, steal identities or sell the information gained onto the dark web.</p>
-					<p style="text-align: left;"> These leaks can sometimes be accidental but a large majority is due to a targeted attack.</p>
-					<p style="text-align: left;"> Just like with any other cybercrime, there are measures which could be taken to prevent attacks but are sometimes forgotten which cause attacks to happen:</p>
-					<p style="text-align: left;"> •    Weak passwords would allow easy access for cybercriminals to steal data, with some cases being that the cybercriminals simply guess the password due to it containing whole words or phrases.</p>
-					<p style="text-align: left;"> •    If an unintentional virus or malicious software is downloaded onto a machine through something as simple as visiting a webpage or application which is out of date or has flaws in its security.</p>
-					<p style="text-align: left;"> •    Attackers are able to exploit vulnerabilities in systems such as out-dated software so they can get malware onto a computer or network allowing data to be stolen.</p>
-					
-					<br />
-					
-					<h4 style="text-align: left;"><strong>How it happens and how to prevent it</strong></h4>
-					<p style="text-align: left;"> 45% of data breaches are from criminal hacking. They gain unlawful access to the data stored by organisations.</p>
-					<p style="text-align: left;"> The most popular hacking technique included stealing credentials of users then selling them on the dark web.</p>
-					<p style="text-align: left;"> Once hackers have your login credentials, they can do acts such as selling them to committing fraud.</p>
-					<p style="text-align: left;"> The stolen details could even be used to launch other attacks like phishing.</p>
-            </div>
-			</div>
+					            <p style="text-align: left;">If a company suffers from a data breach, and a violation of the law is committed with the stolen information, the attackers are given fines or worse depending on the acts committed.</p>
+					            <p style="text-align: left;">Attackers often do research on the companies before they attack which will allow them to identify vulnerabilities in the security. This could involve weaknesses such as employees or the systems themselves.</p>
+								<p style="text-align: left;">Next comes the attack, where the cybercriminals exploit either the network or the a certain person in order to gain unlawful access into confidential data.</p>
+								
+								<br/>
+								
+								<h4 style="text-align: left;"><strong><u>Who is affected?</u></strong></h4>
+								<p style="text-align: left;">Even though it is companies and organisations who are attacked at first, the real target is the users/customers. The information given by you is what the attackers are after. This information is valuable to them because the attackers can sell it, use it to commit fraud or even launch more attacks online.</p>
+					            <p style="text-align: left;">There is no specific size of company which are targeted for cyber breach attacks because every company has valuable data. From large organisations like Adobe or MyFitnessPal to much smaller companies like Adult Friend Finder. All of these companies have been victims of cyber breaches with the impact of the attack causing a large amount of private user information to be leaked.</p>
+								
+								<br />
+								
+								<h4 style="text-align: left;"><strong><u>Why does it happen?</u></strong></h4>
+								<p style="text-align: left;"> Like all cybercrime, profit is the main aim and gain.</p>
+								<p style="text-align: left;"> Hackers can steal money, steal identities or sell the information gained onto the dark web.</p>
+								<p style="text-align: left;"> These leaks can sometimes be accidental but a large majority is due to a targeted attack.</p>
+								<p style="text-align: left;"> Just like with any other cybercrime, there are measures which could be taken to prevent attacks but are sometimes forgotten which cause attacks to happen:</p>
+								<p style="text-align: left;"> •    Weak passwords would allow easy access for cybercriminals to steal data, with some cases being that the cybercriminals simply guess the password due to it containing whole words or phrases.</p>
+								<p style="text-align: left;"> •    If an unintentional virus or malicious software is downloaded onto a machine through something as simple as visiting a webpage or application which is out of date or has flaws in its security.</p>
+								<p style="text-align: left;"> •    Attackers are able to exploit vulnerabilities in systems such as out-dated software so they can get malware onto a computer or network allowing data to be stolen.</p>
+								
+								<br />
+								
+								<h4 style="text-align: left;"><strong><u>How it happens and how to prevent it</u></strong></h4>
+								<p style="text-align: left;"> <font color="#7ea66c"><b>45%</b></font> of data breaches are from criminal hacking. They gain unlawful access to the data stored by organisations.</p>
+								<p style="text-align: left;"> The most popular hacking technique included stealing credentials of users then selling them on the dark web.</p>
+								<p style="text-align: left;"> Once hackers have your login credentials, they can do acts such as selling them to committing fraud.</p>
+								<p style="text-align: left;"> The stolen details could even be used to launch other attacks like phishing.</p>
+			            	</div> 
+						</div>
+					</div>
+					<div class="b2t-container">
+				      <button onclick="b2t()" title="Go to top"><p class="back2top"><img src="images/up.png" width="20" height="25" style="padding-bottom: 5px;"><strong> Back to Top </strong><img src="images/up.png" width="20" height="25" style="padding-bottom: 5px;"></p></button>
+				    </div>
+				</div>
 			</div>
 			
       <!-- Footer -->
@@ -174,43 +237,26 @@
      	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> <!-- Setting the JS into JQuery -->
 		<script>
 			// Navigation //
-            var $nav = $('nav > ul');
-            var $btnMenu = $('.menu');
+           function toggleMenu() {
+              // Activate the hamburger menu button //
+              document.getElementById("burgermenu").classList.toggle("change");
 
-            $btnMenu.click(function() {
-                $nav.find('li:not(.menu)').toggleClass('animate');
-                $btnMenu.toggleClass('closed');
-                if(!$('.menu').hasClass('closed')){
-                    $('nav > ul > li > a').css('display', 'none');
-                }
-                else if($('.menu').hasClass('closed')) {
-                    $('nav > ul > li > a').css('display', 'block');
-                }
+              // Open or Close Nav Bar //
+              document.getElementById('sidebar-wrapper').classList.toggle("toggled");
+              document.getElementById('page-content-wrapper').classList.toggle("toggled");
+            }
 
+			// When window is resized close menu if open //
+			$(window).resize(function() {
+			 	if($('.toggled')[0]){
+			 		toggleMenu();
+			 	}
             })
-
-            $(window).resize(function() {
-                if ($(document).width() > 1572) {
-                    $btnMenu.removeClass('closed');
-                    $nav.find('li').removeAttr('style')
-                    $nav.find('li').removeClass('animate');
-                    $('nav > ul > li > a').css('display', 'block');
-                }
-                else{
-                    $('nav > ul > li > a').css('display', 'none');
-                }
-            })
-
-            $(window).on('load', function() {
-                 if ($(document).width() < 1572) {
-                     if(!$('.menu').hasClass('closed')){
-                        $('nav > ul > li > a').css('display', 'none');
-                    }
-                    else if($('.menu').hasClass('closed')) {
-                        $('nav > ul > li > a').css('display', 'block');
-                    }
-                }
-            });
+            // Back to Top //
+         function b2t() {
+           document.body.scrollTop = 0; // For Safari
+           document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+         }
 		</script>
       </div>
    </body>
