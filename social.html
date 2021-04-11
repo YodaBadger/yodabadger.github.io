@@ -2,57 +2,108 @@
 <html>
     <head>
         <title>Social Media</title>
-        <link href="/css/styles.css" rel="stylesheet">
-	   <link href="/images/icon.png" rel="shortcut icon">
+        <link href="css/styles.css" rel="stylesheet">
+	   <link href="images/icon.png" rel="shortcut icon">
     </head>
     <body>
       
-      	<!-- Navigation -->
-		<section class="navigation">
-            	<div class="nav-container">
-    		    <nav>
-			    <h1 style="float: none; position: absolute; top: 50%; left: 47%; transform: translate(-50%, -50%); color: white; font-size: 40px;">Menu</h1>
-                    <ul>
-        		        <li><a href="index.html">Home Page</a></li>
-        		        <li><a href="passwords.html">Passwords</a></li>
-        		        <li><a href="cyber.html">Cyber Breaches</a></li>
-        		        <li><a href="email.html">Email Phishing</a></li>
-        		        <li><a href="sharing.html">Sharing Information</a></li>
-        		        <li><a href="public.html">Public WiFi</a></li>
-        		        <li><a class="active" href="social.html">Social Media</a></li>
-                        	<li><a href="malware.html">Malware & Viruses</a></li>
-                        	<li><a href="secure.html">Website Security</a></li>
-        		        <li class="menu">
-        		          <span></span>
-        		        </li>
-                    </ul>
-    		    </nav>
-    		</div>
-    	</section>
-	    <section class="homebutton">
-      		<a href="index.html"><img src="/images/logo.png" alt="Logo" width="65" height="65"></a>
-      	</section>
-      
+<div id="wrapper">   
+         <!-- Navigation -->
+         <div id="sidebar-wrapper">
+            <div class="sidenav">
+               <button class="dropdown-btn">
+                  <a href="index.html"><img src="images/icon-home.png" width="20" height="20" style="margin-top: -6px;"> Home Page</a> 
+               </button>
+
+               <button class="dropdown-btn">
+                  <a href="passwords.html"><img src="images/icon-passwords.png" width="20" height="20" style="margin-top: -6px;"> Passwords</a> 
+               </button>
+
+               <button class="dropdown-btn">
+                  <a href="cyber.html"><img src="images/icon-cyber.png" width="20" height="20" style="margin-top: -6px;"> Cyber Breaches</a> 
+               </button>
+
+               <button class="dropdown-btn">
+                  <a href="email.html"><img src="images/icon-email.png" width="20" height="20" style="margin-top: -6px;"> Email Phishing</a> 
+               </button>
+
+               <button class="dropdown-btn">
+                  <a href="sharing.html"><img src="images/icon-sharing.png" width="20" height="20" style="margin-top: -6px;"> Sharing Information</a> 
+               </button>
+
+               <button class="dropdown-btn">
+                  <a href="public.html"><img src="images/icon-wifi.png" width="20" height="20" style="margin-top: -6px;"> Public WiFi</a> 
+               </button>
+
+               <button class="dropdown-btn active">
+                  <a href="social.html"><img src="images/icon-social.png" width="20" height="20" style="margin-top: -6px;"> Social Media</a> 
+               </button>
+               <div class="dropdown-container" style="display: block;">
+                  <a href="#page-content-wrapper">Introduction</a>
+                  <a href="#protection">Protection</a>
+               </div>
+
+               <button class="dropdown-btn">
+                  <a href="malware.html"><img src="images/icon-malware.png" width="20" height="20" style="margin-top: -6px;"> Malware & Viruses</a> 
+               </button>
+
+               <button class="dropdown-btn">
+                  <a href="secure.html"><img src="images/icon-website.png" width="20" height="20" style="margin-top: -6px;"> Website Security</a> 
+               </button>
+
+            </div>
+
+            <!-- Menu Button -->
+            <section class="menubutton" onclick="toggleMenu()"> 
+               MENU
+            </section>
+            <!-- Hamburger style menu button -->
+            <div id="burgermenu" class="container" onclick="toggleMenu()">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+         </div>
+         </div>
+
+       <!-- Bar on top + Title -->
+         <section class="navigation">
+            <div class="nav-container">
+               <nav>
+                  <h1>Social Media</h1>
+               </nav>
+            </div>
+         </section>
+
+         <!-- Home Button -->
+         <section class="homebutton"> 
+            <a href="index.html"><img src="images/logo.png" alt="Logo" width="65" height="65"></a>
+         </section>
+
+
+      <!-- Main Page -->
+      <div id="page-content-wrapper">
+
         <!-- First Section -->
         <div class="hero-section" style="height: 150px;">
         </div>
     	   
+        <div class="logos-section"></div>
         <div class="class-section">
             <div class="wrap-2 a">
                 <div class="left-1">
                     <h2 class="heading-3"><strong><u>Social Media</u></strong></h2>
                     <p class="paragraph-2">
-                        According to recent statistics, in 2019 around 160,000 Facebook accounts were compromised per day, the range of data stolen varies from a victims IP address all the way to personal information such as email addresses, names and phone numbers.<br/>
-                        Facebook has roughly 2.8 billion users and also owns multiple other platforms such as Twitter, WhatsApp and Instagram, so if a Facebook account is compromised there is a fairly good chance that other accounts using the same information could be or already are compromised.
+                        According to recent statistics, in 2019 around <b><font color="#7ea66c">160,000</font></b> Facebook accounts were compromised per day, the range of data stolen varies from a victims IP address all the way to personal information such as email addresses, names and phone numbers.<br/>
+                        Facebook has roughly <b><font color="#7ea66c">2.8 billion</font></b> users and also owns multiple other platforms such as Twitter, WhatsApp and Instagram, so if a Facebook account is compromised there is a fairly good chance that other accounts using the same information could be or already are compromised.
                     </p>
                 </div>
                 <div class="right-1">
-                    <img src="/images/socialmedias.jpg" width="500" alt="Social Media Cubes"/>
+                    <img src="images/socialmedias.jpg" width="500" alt="Social Media Cubes"/>
                 </div>
             </div>
             <div class="wrap-2 b">
                 <div class="left-2">
-                    <img src="/images/playground.jpg" width="500" alt="People at the playground on their phones"/>
+                    <img src="images/playground.jpg" width="500" alt="People at the playground on their phones"/>
                 </div>
                 <div class="right-2">
                     <h2 class="heading-3"><strong><u>How data is stolen</u></strong></h2>
@@ -67,6 +118,7 @@
 
 
         <!-- Second Section -->
+      <div class="logos-section" id="protection"></div>
         <div class="section-1">
             <div class="wrap-2 a">
                 <div class="left-1">
@@ -76,7 +128,7 @@
                         Firstly – The users’ pictures may be a indication it is not a legitimate account. Hackers tend to use stock/generic photos or sometimes even take them from other people’s profiles.<br/>
                         Secondly – The date the account joined. This is one vital piece of information that can be a giveaway; fake accounts will often have been created in the past couple of months, sometimes even earlier in the week or on the same day.<br/>
                         Thirdly – Account inactivity. A hacker account will often not have many posts, if any at all. This is a clear indication the account is suspicious.<br/>
-                        Fourthly – If unable to find information about the first three points, and you are concerned you don’t know the person – send them a message. Messages can be sent between users who aren’t friends, and a simple ‘Do I know you?’ may be enough to deter a hacker, as they often wont reply to these messages, and therefore you can be sure they are up to no good [4].
+                        Fourthly – If unable to find information about the first three points, and you are concerned you don’t know the person – send them a message. Messages can be sent between users who aren't friends, and a simple ‘Do I know you?’ may be enough to deter a hacker, as they often wont reply to these messages, and therefore you can be sure they are up to no good [4].
                     </p>
                 </div>
                 <div class="right-2">
@@ -109,7 +161,12 @@
                     </p>
                 </div>
             </div>
-        </div>
+        </div> 
+      <div class="b2t-container" style="background: #364d32;">
+      <button onclick="b2t()" title="Go to top" style="background-image: linear-gradient(#364d32, rgba(38,38,38,1));"><p class="back2top"><img src="images/up.png" width="20" height="25" style="padding-bottom: 5px;"><strong> Back to Top </strong><img src="images/up.png" width="20" height="25" style="padding-bottom: 5px;"></p></button>
+      </div>
+    </div>
+  </div>
 
 
           <!-- Footer -->
@@ -126,44 +183,26 @@
 		<script>
             
             // Navigation //
-            var $nav = $('nav > ul');
-            var $btnMenu = $('.menu');
+            function toggleMenu() {
+              // Activate the hamburger menu button //
+              document.getElementById("burgermenu").classList.toggle("change");
 
-            $btnMenu.click(function() {
-                $nav.find('li:not(.menu)').toggleClass('animate');
-                $btnMenu.toggleClass('closed');
-                if(!$('.menu').hasClass('closed')){
-                    $('nav > ul > li > a').css('display', 'none');
-                }
-                else if($('.menu').hasClass('closed')) {
-                    $('nav > ul > li > a').css('display', 'block');
-                }
-                
-            })
+              // Open or Close Nav Bar //
+              document.getElementById('sidebar-wrapper').classList.toggle("toggled");
+              document.getElementById('page-content-wrapper').classList.toggle("toggled");
+            }
 
-            $(window).resize(function() {
-                if ($(document).width() > 1572) {
-                    $btnMenu.removeClass('closed');
-                    $nav.find('li').removeAttr('style')
-                    $nav.find('li').removeClass('animate');
-                    $('nav > ul > li > a').css('display', 'block');
-                }
-                else{
-                    $('nav > ul > li > a').css('display', 'none');
-                }
-            })
-
-	 $(window).on('load', function() {
- 	 	if ($(document).width() < 1572) {
-	 		if(!$('.menu').hasClass('closed')){
-	 			$('nav > ul > li > a').css('display', 'none');
-	 		}
-	 		else if($('.menu').hasClass('closed')) {
-	 			$('nav > ul > li > a').css('display', 'block');
-	 		}
-	 	}
-	 });
-
+      // When window is resized close menu if open //
+      $(window).resize(function() {
+        if($('.toggled')[0]){
+          toggleMenu();
+        }
+      })
+      // Back to Top //
+         function b2t() {
+           document.body.scrollTop = 0; // For Safari
+           document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+         }
 		</script>
       </div>
    </body>
