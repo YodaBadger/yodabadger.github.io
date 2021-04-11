@@ -7,39 +7,155 @@
    </head>
    <body>
       
-      	<!-- Navigation -->
-		<section class="navigation">
-		  <div class="nav-container">
-		    <nav>
-			    <h1 style="float: none; position: absolute; top: 50%; left: 47%; transform: translate(-50%, -50%); color: white; font-size: 40px;">Menu</h1>
-		      <ul>
-		        <li><a href="index.html">Home Page</a></li>
-		        <li><a href="passwords.html">Passwords</a></li>
-		        <li><a href="cyber.html">Cyber Breaches</a></li>
-		        <li><a href="email.html">Email Phishing</a></li>
-		        <li><a href="sharing.html">Sharing Information</a></li>
-		        <li><a href="public.html">Public WiFi</a></li>
-		        <li><a href="social.html">Social Media</a></li>
-				<li><a href="malware.html">Malware & Viruses</a></li>
-				<li><a href="secure.html">Website Security</a></li>
-		        <li class="menu">
-		          <span></span>
-		        </li>
-		      </ul>
-		    </nav>
-		  </div>
-		</section>
-	   <section class="homebutton">
-      		<a href="index.html"><img src="/images/logo.png" alt="Logo" width="65" height="65"></a>
-      	</section>
-      
-      <!-- First Section -->
-      <div class="section-1">
-           <h1 class="heading-6">References</h1>
-		   
-		   <a href="/References.txt" download> References</a>
-		   
+<div id="wrapper">   
+         <!-- Navigation -->
+         <div id="sidebar-wrapper">
+            <div class="sidenav">
+               <button class="dropdown-btn">
+                  <a href="index.html"><img src="images/icon-home.png" width="20" height="20" style="margin-top: -6px;"> Home Page</a> 
+               </button>
+
+               <button class="dropdown-btn">
+                  <a href="passwords.html"><img src="images/icon-passwords.png" width="20" height="20" style="margin-top: -6px;"> Passwords</a> 
+               </button>
+
+
+               <button class="dropdown-btn">
+                  <a href="cyber.html"><img src="images/icon-cyber.png" width="20" height="20" style="margin-top: -6px;"> Cyber Breaches</a> 
+               </button>
+
+               <button class="dropdown-btn">
+                  <a href="email.html"><img src="images/icon-email.png" width="20" height="20" style="margin-top: -6px;"> Email Phishing</a> 
+               </button>
+
+               <button class="dropdown-btn">
+                  <a href="sharing.html"><img src="images/icon-sharing.png" width="20" height="20" style="margin-top: -6px;"> Sharing Information</a> 
+               </button>
+
+               <button class="dropdown-btn">
+                  <a href="public.html"><img src="images/icon-wifi.png" width="20" height="20" style="margin-top: -6px;"> Public WiFi</a> 
+               </button>
+
+               <button class="dropdown-btn">
+                  <a href="social.html"><img src="images/icon-social.png" width="20" height="20" style="margin-top: -6px;"> Social Media</a> 
+               </button>
+
+               <button class="dropdown-btn">
+                  <a href="malware.html"><img src="images/icon-malware.png" width="20" height="20" style="margin-top: -6px;"> Malware & Viruses</a> 
+               </button>
+
+               <button class="dropdown-btn">
+                  <a href="secure.html"><img src="images/icon-website.png" width="20" height="20" style="margin-top: -6px;"> Website Security</a> 
+               </button>
+
+            </div>
+
+            <!-- Menu Button -->
+            <section class="menubutton" onclick="toggleMenu()"> 
+               MENU
+            </section>
+            <!-- Hamburger style menu button -->            <div id="burgermenu" class="container" onclick="toggleMenu()">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
          </div>
+         </div>
+
+       <!-- Bar on top + Title -->
+         <section class="navigation">
+            <div class="nav-container">
+               <nav>
+                  <h1>References</h1>
+               </nav>
+            </div>
+         </section>
+
+         <!-- Home Button -->
+         <section class="homebutton"> 
+            <a href="index.html"><img src="images/logo.png" alt="Logo" width="65" height="65"></a>
+         </section>
+
+
+      <!-- Main Page -->
+      <div id="page-content-wrapper">
+
+       <!-- First Section -->
+      <div class="section-1">
+        <div class="cyber-wrap">
+          <div class="cyber-left">
+            <h1 class="heading-3"><strong><u>References</u></strong></h1>
+            <br />
+            <p>These are the links that were used for each page to gather the information needed to write about the topics on this website.</p>
+          </div>
+        </div>      
+      </div>
+     
+     <!-- Second Section -->
+      <div class="logos-section" id="homepage"></div>
+      <div class="class-section">
+         <div class="wrap-2 a">
+            <div class="left-1" style="width: 1200px;">
+              <h2 class="heading-3"><u><strong>Passwords</strong></u></h2><br>
+              <a href="https://www.idagent.com/blog/10-password-security-statistics-that-you-need-to-see-now/" target="_blank">https://www.idagent.com/blog/10-password-security-statistics-that-you-need-to-see-now/</a><br><br>
+              <a href="https://www.safetydetectives.com/blog/the-most-hacked-passwords-in-the-world/" target="_blank">https://www.safetydetectives.com/blog/the-most-hacked-passwords-in-the-world/</a><br><br>
+
+              <h2 class="heading-3"><u><strong>Cyber Breaches</strong></u></h2><br>
+              <a href="https://www.itgovernance.eu/blog/en/the-6-most-common-ways-data-breaches-occur" target="_blank">https://www.itgovernance.eu/blog/en/the-6-most-common-ways-data-breaches-occur</a><br><br>
+              <a href="https://www.csoonline.com/article/2130877/the-biggest-data-breaches-of-the-21st-century.html" target="_blank">https://www.csoonline.com/article/2130877/the-biggest-data-breaches-of-the-21st-century.html</a><br><br>
+              <a href="https://us.norton.com/internetsecurity-privacy-data-breaches-what-you-need-to-know.html" target="_blank">https://us.norton.com/internetsecurity-privacy-data-breaches-what-you-need-to-know.html</a><br><br>
+              <a href="https://searchsecurity.techtarget.com/definition/data-breach" target="_blank">https://searchsecurity.techtarget.com/definition/data-breach</a><br><br>
+              <a href="https://www.trendmicro.com/vinfo/us/security/news/cyber-attacks/data-breach-101" target="_blank">https://www.trendmicro.com/vinfo/us/security/news/cyber-attacks/data-breach-101</a><br>
+
+              <h2 class="heading-3"><u><strong>Email Phishing</strong></u></h2><br>
+              <a href="https://www.csoonline.com/article/2117843/what-is-phishing-how-this-cyber-attack-works-and-how-to-prevent-it.html" target="_blank">https://www.csoonline.com/article/2117843/what-is-phishing-how-this-cyber-attack-works-and-how-to-prevent-it.html</a><br><br>
+              <a href="https://terranovasecurity.com/top-examples-of-phishing-emails/" target="_blank">https://terranovasecurity.com/top-examples-of-phishing-emails/</a><br><br>
+              <a href="https://www.kaspersky.co.uk/resource-center/preemptive-safety/what-is-phishings-impact-on-email" target="_blank">https://www.kaspersky.co.uk/resource-center/preemptive-safety/what-is-phishings-impact-on-email</a><br><br>
+              <a href="https://www.psafe.com/en/blog/phishing-attacks-occur/" target="_blank">https://www.psafe.com/en/blog/phishing-attacks-occur/</a><br>
+
+              <h2 class="heading-3"><u><strong>Sharing Information</strong></u></h2><br>
+              <a href="http://islingtonrefugeeforum.org/information-sharing-2/" target="_blank">http://islingtonrefugeeforum.org/information-sharing-2/</a><br><br>
+              <a href="https://threatpost.com/facebook-threatexchange-platform-latest-hope-for-information-sharing/110993/" target="_blank">https://threatpost.com/facebook-threatexchange-platform-latest-hope-for-information-sharing/110993/</a><br><br>
+              <a href=" https://www.gauraw.com/things-you-should-not-share-on-social-media/" target="_blank"> https://www.gauraw.com/things-you-should-not-share-on-social-media/</a><br><br>
+
+              <h2 class="heading-3"><u><strong>Public WiFi</strong></u></h2><br>
+              <a href="https://www.safervpn.com/blog/10-public-wi-fi-security-threats/ " target="_blank">https://www.safervpn.com/blog/10-public-wi-fi-security-threats/ </a><br><br>
+              <a href="https://us.norton.com/internetsecurity-wifi-why-hackers-love-public-wifi.html" target="_blank">https://us.norton.com/internetsecurity-wifi-why-hackers-love-public-wifi.html</a><br><br>
+              <a href="https://e-channelnews.com/top-5-most-dangerous-public-wifi-attacks/ " target="_blank">https://e-channelnews.com/top-5-most-dangerous-public-wifi-attacks/ </a><br><br>
+              <a href="https://us.norton.com/internetsecurity-wifi-public-wi-fi-security-101-what-makes-public-wi-fi-vulnerable-to-attack-and-how-to-stay-safe.html" target="_blank">https://us.norton.com/internetsecurity-wifi-public-wi-fi-security-101-what-makes-public-wi-fi-vulnerable-to-attack-and-how-to-stay-safe.html</a><br><br>
+
+              <h2 class="heading-3"><u><strong>Social Media</strong></u></h2><br>
+              <a href=" https://www.avira.com/en/blog/was-your-facebook-hacked-telltale-signs-to-look-for#:~:text=According%20to%20the%20New%20York,accounts%20are%20compromised%20every%20day." target="_blank">https://www.avira.com/en/blog/was-your-facebook-hacked-telltale-signs-to-look-for</a><br><br>
+              <a href="https://www.theguardian.com/technology/2018/oct/12/facebook-data-breach-personal-information-hackers#:~:text=The%20hackers%20began%20by%20using,30m%20before%20they%20were%20stopped." target="_blank">https://www.theguardian.com/technology/2018/oct/12/facebook-data-breach-personal-information-hackers</a><br><br>
+              <a href="http://met-networks.com/top-7-pitfalls-that-make-you-vulnerable-to-hackers/" target="_blank">http://met-networks.com/top-7-pitfalls-that-make-you-vulnerable-to-hackers/</a><br><br>
+              <a href="https://www.pacetechnical.com/4-characteristics-fake-facebook-friend/" target="_blank">https://www.pacetechnical.com/4-characteristics-fake-facebook-friend/</a><br><br>
+              <a href=" https://www.businessinsider.com/hackers-photos-peace-signs-risk-identity-theft-2017-1?r=US&IR=T" target="_blank">https://www.businessinsider.com/hackers-photos-peace-signs-risk-identity-theft-2017-1?r=US&IR=T</a><br><br>
+              <a href="https://www.forbes.com/sites/jessicabaron/2018/12/16/parents-who-post-about-their-kids-online-could-be-damaging-their-futures/?sh=39ea762d27b7" target="_blank">https://www.forbes.com/sites/jessicabaron/2018/12/16/parents-who-post-about-their-kids-online-could-be-damaging-their-futures/?sh=39ea762d27b7</a><br><br>
+              <a href="https://jelliesapp.com/blog/5-reasons-not-to-post-about-your-child-on-social-media#:~:text=Sharing%20Puts%20Your%20Child%20at%20Risk%20for%20Digital%20Kidnapping&text=Your%20child%27s%20photos%20can%20also%20be%20kidnapped%20for%20baby%20role%2Dplaying.&text=They%20are%2C%20however%2C%20another%20example,publish%20information%20about%20them%20online." target="_blank">https://jelliesapp.com/blog/5-reasons-not-to-post-about-your-child-on-social-</a><br><br>
+
+              <h2 class="heading-3"><u><strong>Malware & Viruses</strong></u></h2><br>
+              <a href="https://uk.pcmag.com/antiphishing/8657/7-signs-you-have-malware-and-how-to-get-rid-of-it" target="_blank">https://uk.pcmag.com/antiphishing/8657/7-signs-you-have-malware-and-how-to-get-rid-of-it</a><br><br>
+              <a href="https://www.mcafee.com/en-gb/antivirus/malware.html#:~:text=Malware%20encompasses%20all%20types%20of,data%20or%20other%20financial%20data " target="_blank">https://www.mcafee.com/en-gb/antivirus/malware.html</a><br><br>
+              <a href="https://www.malwarebytes.com/malware/ " target="_blank">https://www.malwarebytes.com/malware/ </a><br><br>
+              <a href="https://blog.malwarebytes.com/101/2016/08/10-easy-ways-to-prevent-malware-infection/ " target="_blank">https://blog.malwarebytes.com/101/2016/08/10-easy-ways-to-prevent-malware-infection/ </a><br><br>
+              <a href="https://www.techradar.com/uk/best/best-malware-removal " target="_blank">https://www.techradar.com/uk/best/best-malware-removal </a><br><br>
+              <a href="https://blog.malwarebytes.com/101/2016/08/10-easy-ways-to-prevent-malware-infection/" target="_blank">https://blog.malwarebytes.com/101/2016/08/10-easy-ways-to-prevent-malware-infection/</a><br><br>
+
+              <h2 class="heading-3"><u><strong>Website Security</strong></u></h2><br><br>
+              <a href="https://www.webroot.com/gb/en/resources/tips-articles/how-can-i-tell-if-secure-website " target="_blank">https://www.webroot.com/gb/en/resources/tips-articles/how-can-i-tell-if-secure-website </a><br><br>
+              <a href="https://www.sitelock.com/blog/is-this-website-safe/ " target="_blank">https://www.sitelock.com/blog/is-this-website-safe/ </a><br><br>
+              <a href="https://www.money.co.uk/guides/5-ways-to-check-a-website-is-legit.htm " target="_blank">https://www.money.co.uk/guides/5-ways-to-check-a-website-is-legit.htm</a><br><br>
+              <a href="https://support.google.com/chrome/answer/95617?hl=en " target="_blank">https://support.google.com/chrome/answer/95617?hl=en </a><br><br>
+              <a href="https://www.avg.com/en/signal/website-safety " target="_blank">https://www.avg.com/en/signal/website-safety </a><br><br>
+              <a href="https://technewsgadget.net/2020/02/how-to-know-if-a-website-is-secure/" target="_blank">https://technewsgadget.net/2020/02/how-to-know-if-a-website-is-secure/</a><br>
+            </div>          
+        </div>
+      </div>
+
+      <div class="b2t-container">
+      <button onclick="b2t()" title="Go to top"><p class="back2top"><img src="images/up.png" width="20" height="25" style="padding-bottom: 5px;"><strong> Back to Top </strong><img src="images/up.png" width="20" height="25" style="padding-bottom: 5px;"></p></button>
+      </div>
+    </div>
+  </div>
 
       <!-- Footer -->
       <div class="footer-top">
@@ -54,43 +170,26 @@
      	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> <!-- Setting the JS into JQuery -->
 		<script>
 				// Navigation //
-            var $nav = $('nav > ul');
-            var $btnMenu = $('.menu');
+        function toggleMenu() {
+        // Activate the hamburger menu button //
+        document.getElementById("burgermenu").classList.toggle("change");
 
-            $btnMenu.click(function() {
-                $nav.find('li:not(.menu)').toggleClass('animate');
-                $btnMenu.toggleClass('closed');
-                if(!$('.menu').hasClass('closed')){
-                    $('nav > ul > li > a').css('display', 'none');
-                }
-                else if($('.menu').hasClass('closed')) {
-                    $('nav > ul > li > a').css('display', 'block');
-                }
+        // Open or Close Nav Bar //
+        document.getElementById('sidebar-wrapper').classList.toggle("toggled");
+        document.getElementById('page-content-wrapper').classList.toggle("toggled");
+      }
 
+      // When window is resized close menu if open //
+      $(window).resize(function() {
+        if($('.toggled')[0]){
+          toggleMenu();
+        }
             })
-
-            $(window).resize(function() {
-                if ($(document).width() > 1572) {
-                    $btnMenu.removeClass('closed');
-                    $nav.find('li').removeAttr('style')
-                    $nav.find('li').removeClass('animate');
-                    $('nav > ul > li > a').css('display', 'block');
-                }
-                else{
-                    $('nav > ul > li > a').css('display', 'none');
-                }
-            })
-
-            $(window).on('load', function() {
-                 if ($(document).width() < 1572) {
-                     if(!$('.menu').hasClass('closed')){
-                        $('nav > ul > li > a').css('display', 'none');
-                    }
-                    else if($('.menu').hasClass('closed')) {
-                        $('nav > ul > li > a').css('display', 'block');
-                    }
-                }
-            });
+      // Back to Top //
+         function b2t() {
+           document.body.scrollTop = 0; // For Safari
+           document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+         }
 		</script>
       </div>
    </body>
