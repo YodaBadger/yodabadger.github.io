@@ -1094,7 +1094,9 @@ nav h1 {
     top: 75px;
     width: 0px;
     height: 100%;
+    padding-bottom: 150px;
     background-color: #111;
+    overflow: scroll;
 }
 
 #page-content-wrapper {
