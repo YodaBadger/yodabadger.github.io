@@ -1133,8 +1133,6 @@ nav h1 {
   text-align: left;
   cursor: pointer;
   outline: none;
-  max-height: 1000px;
-  overflow: scroll;
 }
 
 /* On mouse-over */
